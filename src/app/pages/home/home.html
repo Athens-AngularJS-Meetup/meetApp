@@ -1,0 +1,21 @@
+            <div class="pagewrap" ng-controller="homeController as home">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="col-sm-12">Γουελκαμ</h2>
+                        <input type="text" ng-model="home.city">
+                        <a class="btn btn-default" ng-click="home.fetchGroups(home.city)">Getit</a>
+                        
+                        <div class="col-sm-10">
+                        <input type="text" ng-model="fltr.name">
+
+                            <ul class="list-group">
+                                <li class="list-group-item" ng-repeat="item in home.data | filter:fltr">
+                                    Όνομα: {{item.name}} | <a href="{{item.link}}">link</a>
+                                    <br />Περιγραφή: {{item.description}}
+                                    <span ng-bind-html="item.description"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>

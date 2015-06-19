@@ -1,0 +1,31 @@
+/* just playing aroung, whyn not use pure js colors? 
+https://www.javascript.com/assets
+Cool redesign!!!
+*/
+
+.yellow {color:#f2d50a;}
+.darkgray {color:#313d38;}
+.gray {color:#6d7d79;}
+.red {color:#e55c53;}
+
+.yellowbg {background-color:#f2d50a;}
+.darkgraybg {background-color:#313d38;}
+.graybg {background-color:#6d7d79;}
+.redbg {background-color:#e55c53;}
+/* secondary colors */
+.offwhite {color:#f8f4e3}
+.blue {color:#9cd4de}
+.green {color:#7eab67}
+.navyblue {color:#379aaf}
+
+.offwhitebg {background-color:#f8f4e3}
+.bluebg {background-color:#9cd4de}
+.greenbg {background-color:#7eab67}
+.navybluebg {background-color:#379aaf}
+
+/*layout*/
+.logo {padding:10px;font-size:40px;display:inline-block;margin:10px 0 0;}
+.logo.darkgraybg {transition:all 0.3s linear 0s;}
+.logo.darkgraybg:hover {background: #f2d50a;color:#313d38;}
+
+.pagewrap {padding-top: 150px}

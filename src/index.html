@@ -1,0 +1,80 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NG-Athens Meetup @ theCube</title>
+     <meta name="keywords" content="" />
+     <meta name="description" content="">
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="content/css/styles.css" rel="stylesheet" />
+</head>
+<body ng-app="meetApp" ng-controller="shellController as shell" class="appcontainer">
+<!-- Now we can use shel.variableName here, if we do the same in the controller -->
+    <div id="headerwrap" class="headerwrap">
+        <div class="headermain">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar">
+                        <div class="navbar-header">
+                            <button class="navbar-toggle collapsed" aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" type="button">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="logo darkgraybg yellow" href="/">
+                                meetApp
+                            </a>
+                            <br />Angular Meetup demo App
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav" role="menu">
+        
+                                <li role="presentation" class="">
+                                    <a role="menuitem" ui-sref-active="active" ui-sref="home"><i class="fa fa-home"></i> Αρχική</a>
+                                </li>
+                                <li role="presentation" class="">
+                                    <a role="menuitem" ui-sref-active="active" ui-sref="other"><i class="fa fa-youtube"></i> Other</a>
+                                </li>
+                               
+                            </ul>
+                            
+                            <ul class="nav navbar-nav navbar-right">
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+    <div ui-view></div>
+
+
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-animate/angular-animate.js"></script>
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="../bower_components/angular-aria/angular-aria.js"></script>
+    <script src="../bower_components/angular-material/angular-material.js"></script>
+    <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
+
+
+    <script src="app/app.module.js"></script>
+    <script src="app/app.config.js"></script>
+
+    <script src="app/common/controllers/shell.controller.js"></script>
+    <script src="app/pages/home/home.controller.js"></script>
+    <script src="app/pages/other/other.controller.js"></script>
+
+    <script src="app/common/services/meetupApi.service.js"></script>
+    <script src="app/common/services/ytApi.Service.js"></script>
+
+
+</body>
+</html>

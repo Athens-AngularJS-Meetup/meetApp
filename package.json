@@ -1,0 +1,22 @@
+{
+  "name": "meetApp",
+  "version": "1.0.0",
+  "description": "A sample app for Angular Meetup, Athens",
+  "authors": [
+    "Andreas Loukakis"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "paths": {
+  }
+}
